@@ -314,7 +314,7 @@ body {
 .footer {
 	background-image: radial-gradient(circle, #fee5d2, #fff9f4);
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 }
 
 .footer ul {
@@ -360,6 +360,13 @@ body {
 .footer a:hover {
 	color: #fa7d1e;
 }
+
+
+
+
+
+
+
 
 
 
