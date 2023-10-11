@@ -18,7 +18,8 @@
 							<li><a href="#">Courses</a></li>
 						</ul>
 					</div>
-					<div class="nav-button"><button>Register</button></div>
+					<div id="nav-button"><a href="#">Register</a></div>
+					<div class="menu-icon"><img src="./images/menu.svg" alt="" /></div>
 				</div>
 				<hr />
 				<div class="section-a-one content">
@@ -63,7 +64,7 @@
 					
 				</div>
 				
-				<div class="start-button content"><button>Start Here</button></div>
+				<div class="start-button content"><a href="#">Start Here</a></div>
 				
 				<div class="content"><p>Need a team plan? Check out <a href="#">Fenex Tech for Business</a></p></div>
 				<div class="content">
@@ -139,7 +140,7 @@
 			</div>
 			</div>
 			
-			<div class="content">
+			<div class="vid-2">
 				<video autoplay="" loop="" muted="" playsinline="" data-wf-ignore="true" data-object-fit="cover">
 					<source src="https://assets-global.website-files.com/62a8969da1ab561666c8c408/62b56e57feeafef0c31ef28e_lab-demo-video-main-60fps-transcode.mp4" data-wf-ignore="true">
 					<source src="https://assets-global.website-files.com/62a8969da1ab561666c8c408/62b56e57feeafef0c31ef28e_lab-demo-video-main-60fps-transcode.webm" data-wf-ignore="true">
@@ -150,72 +151,37 @@
 			
 			<div class="plans">
 				<div class="plans-inner">
-				<div>
-					<img src="./images/it.webp" alt="" />
-				</div>
-				
-				<div>
-					<p>Our Pro plan gives you access to KodeKloud Engineer Pro and Playgrounds that let you test and play around with pre-built solutions, such as:</p>
-					<ul>
-						<li>Cloud environments like AWS, Azure or GCP</li>
-						<li>A Docker server</li>
-						<li>A Kubernetes cluster</li>
-						<li>An Istio setup</li>
-						<li>A server with Ansible + multiple VMs you can target for automation</li>
-					</ul>
-					<p>Playgrounds are blank, clean environments intended for you to tinker with freely. Each playground can be extended to give you as much time as you need.</p>
-				</div>
+					<div>
+						<img src="./images/it.webp" alt="" />
+					</div>
+					
+					<div>
+						<p>Our Pro plan gives you access to KodeKloud Engineer Pro and Playgrounds that let you test and play around with pre-built solutions, such as:</p>
+						<ul>
+							<li>Cloud environments like AWS, Azure or GCP</li>
+							<li>A Docker server</li>
+							<li>A Kubernetes cluster</li>
+							<li>An Istio setup</li>
+							<li>A server with Ansible + multiple VMs you can target for automation</li>
+						</ul>
+						<p>Playgrounds are blank, clean environments intended for you to tinker with freely. Each playground can be extended to give you as much time as you need.</p>
+					</div>
 				</div>
 			</div>
-			
-				
-		
-			
-			
-			
-			
-			
-			
-			
-			
+						
 			<div class="footer">
 				<div>
 					<h2>FT</h2>
-					<p>Zaurac Technologies Pte Ltd</p>
-					<p>14 Robinson Road #08-01A</p>
-					<p>Singapore 048545</p>
+					<p>Fenex Tech</p>
+					<p>Suites 9/10, Plot 313 BSP Plaza, Airport Road.</p>
+					<p>Off Police Sign Board (Beside Womzy Hotel) Federal Housing Lugbe,</p>
+					<p>FCT Abuja, Nigeria.</p>
 				</div>
 				
 				<div>
 					<h4>About</h4>
 					<ul>
 						<li><a href="#">About Us</a></li>
-						<li><a href="#">Our Values</a></li>
-						<li><a href="#">Affiliates</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Career At Fenex Tech</a></li>
-						<li><a href="#">Teach With Us</a></li>
-					</ul>
-				</div>
-				
-				<div>
-					<h4>Help</h4>
-					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Our Values</a></li>
-						<li><a href="#">Affiliates</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Career At Fenex Tech</a></li>
-						<li><a href="#">Teach With Us</a></li>
-					</ul>
-				</div>
-				
-				<div>
-					<h4>Your Account</h4>
-					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Our Values</a></li>
-						<li><a href="#">Affiliates</a></li>
 						<li><a href="#">Contact Us</a></li>
 						<li><a href="#">Career At Fenex Tech</a></li>
 						<li><a href="#">Teach With Us</a></li>
@@ -225,22 +191,21 @@
 				<div>
 					<h4>Social Media</h4>
 					<ul>
-						<li><a href="#">About Us</a></li>
-						<li><a href="#">Our Values</a></li>
-						<li><a href="#">Affiliates</a></li>
-						<li><a href="#">Contact Us</a></li>
-						<li><a href="#">Career At Fenex Tech</a></li>
-						<li><a href="#">Teach With Us</a></li>
+						<li><a href="#">Facebook</a></li>
+						<li><a href="#">X</a></li>
+						<li><a href="#">Instagram</a></li>
+						<li><a href="#">LinkedIn</a></li>
 					</ul>
 				</div>
 				
 			</div>
 			<div class="footer-bottom">
-				<p>@2023</p>
-				<p>myschools.com</p>
-				<p>All Rights Reserved</p>
+				<p>© Copyrights <span id="year"></span> by Fenex Tech. All rights reserved.</p>
 			</div>
 		</div>
-			
+		
+		<script>
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		</script>
 	</body>
 </html>
