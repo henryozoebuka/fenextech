@@ -1,8 +1,6 @@
 body {
 	font-family: arial;
 	margin: 0;
-	background-color: green;
-	
 }	
 
 
@@ -197,7 +195,6 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
-	background-color: yellow;
 }
 
 .experience > div {
@@ -242,7 +239,6 @@ body {
 	display: flex;
 	justify-content: center;
 	margin: 30px 0  30px 0;
-	background-color: red;
 }
 
 .vid-2 video {
@@ -493,7 +489,6 @@ body {
   .mobile-center {
 	  display: flex;
 	  justify-content: center;
-	  background-color: yellow;
   }
   
   .vid-2 video {
@@ -576,7 +571,6 @@ body {
   .mobile-center {
 	  display: flex;
 	  justify-content: center;
-	  background-color: yellow;
   }
   
 }
