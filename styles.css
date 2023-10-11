@@ -371,7 +371,7 @@ body {
 
 
 
-@media (max-width: 500px) {
+@media  (max-width: 800px) {
   .nav-bar {
     display: block;
   }
@@ -382,12 +382,14 @@ body {
   }
   
   .menu-icon img {
-	  height: 50px;
+	  height: 100px;
   }
   
-  .nav-bar a {
+  .nav-bar ul, p {
 	  display: none;
   }
+  
+ 
   
   .nav-bar h1 {
 	  font-size: 5rem;
