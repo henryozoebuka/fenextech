@@ -373,7 +373,8 @@ body {
 
 @media  (max-width: 800px) {
   .nav-bar {
-    display: block;
+    display: flex;
+	justify-content: space-evenly;
   }
   
   .menu-icon {
@@ -382,7 +383,7 @@ body {
   }
   
   .menu-icon img {
-	  height: 100px;
+	  height: 40px;
   }
   
   .nav-bar ul, p {
