@@ -1,7 +1,11 @@
 body {
 	font-family: arial;
 	margin: 0;
+	background-color: green;
+	
 }	
+
+
 
 .menu-icon {
 	  display: none;
@@ -109,15 +113,22 @@ body {
 
 .stat-contents {
 	margin: 50px 30px 50px 30px;
+	flex-wrap: wrap;
+	padding: 0 0 0 20px;
+	text-align: center;
 }
 
 .stat-contents div {
-	display: inline-block;
-	padding: 0 0 0 20px;
+	display: flex;
+	justify-content: center;
 }
 
 .stat-contents img {
 	height: 50px;
+}
+
+.start-button {
+	margin: 50px 0 50px 0;
 }
 
 .start-button a {
@@ -129,7 +140,7 @@ body {
 }
 
 .section-a video {
-	width: 700px;
+	width: 70vw;
 	border-radius: 15px;
 	border: solid 15px #fa7d1e;
 }
@@ -165,12 +176,14 @@ body {
 	font-size: 1.2rem;
 	color: #787878;
 	margin: 0 0 30px 0;
+	padding: 0 20px 0 20px;
 }
 
 .engineers h1 {
 	text-align: center;
 	font-size: 3.5rem;
-	margin: 100px 200px 30px 200px;	
+	margin: 0;
+	color: #000000;
 }
 
 .engineers h1 span {
@@ -182,14 +195,17 @@ body {
 
 .experience {
 	display: flex;
-	justify-content: center;
+	justify-content: space-evenly;
 	align-items: center;
-	margin: 0 150px 50px 150px;
+	background-color: yellow;
+}
+
+.experience > div {
+	width: 45vw;
 }
 
 .experience img {
-	height: 500px;
-	padding: 0 50px 0 0;
+	width: 45vw;
 }
 
 
@@ -220,12 +236,19 @@ body {
 
 .learn-section {
 	background-image: radial-gradient(circle, #fee5d2, #fff9f4);
-	padding: 50px 200px 50px 200px;
 }
 
 .vid-2 {
 	display: flex;
 	justify-content: center;
+	margin: 30px 0  30px 0;
+	background-color: red;
+}
+
+.vid-2 video {
+	width: 70vw;
+	border-radius: 15px;
+	border: solid 15px #fa7d1e;
 }
   
 .learn {
@@ -265,32 +288,27 @@ body {
 	display: flex;
 }
 
-.learn-section video {
-	
-	width: 800px;
-	border-radius: 20px;
-	margin: 50px 0 0 0;
-	border: solid 15px #fa7d1e;
-}
 
 
 .plans {
 	display: flex;
-	justify-content: center;
-	padding: 50px 0 50px 0;
+	justify-content: space-evenly;
+}
+
+.plans-inner > div {
+	width: 45vw;
 }
 
 .plans-inner {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: 0 100px 0 100px;
 }
 
 .plans img {
-	width: 600px;
-	padding: 0 50px 0 0;
+	width: 40vw;	
 }
+
 
 .plans p, li {
 	font-size: 1.25rem;
@@ -298,9 +316,8 @@ body {
 }
 
 .company-logo {
-	height: 30px;
-	display: inline-block;
-	padding: 0 30px 0 30px;
+	height: 35px;
+	padding: 30px;
 }
 
 
@@ -308,6 +325,8 @@ body {
 	display: flex;
 	justify-content: center;
 	margin: 0 0 50px 0;
+	width: 90vw;
+	flex-wrap: wrap;
 }
 
 
@@ -338,7 +357,7 @@ body {
 	font-size: 1rem;
 }
 
-.footer h2 {
+.footer h1 {
 	width: 40px;
 	text-align: center;
 	background-color: #fa7d1e;
@@ -371,10 +390,11 @@ body {
 
 
 
-@media  (max-width: 800px) {
+@media  (max-width: 650px) {
   .nav-bar {
     display: flex;
-	justify-content: space-evenly;
+	justify-content: space-between;
+	align-items: center;
   }
   
   .menu-icon {
@@ -386,14 +406,17 @@ body {
 	  height: 40px;
   }
   
-  .nav-bar ul, p {
+  .nav-bar ul {
 	  display: none;
   }
   
+  .nav-bar p {
+	  display: none;
+  }
  
   
   .nav-bar h1 {
-	  font-size: 5rem;
+	  font-size: 3rem;
   }
   
   .content {
@@ -402,9 +425,17 @@ body {
   
   .stat {
 	display:grid;
-	grid-template-rows: auto;
+	grid-template-rows: 1fr 1fr;
 	grid-template-columns: repeat(2, 1fr);
-	margin: 20px 0 20px 0;
+	margin: 50px 0 50px 0;
+  }
+  
+  .stat-contents {
+	  margin: 0;
+  }
+  
+  .stat-contents img{
+	  height: 30px;
   }
   
   .section-a video {
@@ -415,61 +446,82 @@ body {
 	  display: flex;
 	  justify-content: center;
 	  margin: 0;
-	  width: 90vw;
+	  padding: 0 20px 0 20px;
+  }
+  
+  .section-b h1 {
+	  font-size: 3rem;
   }
   
   .company-logos {
-	height: 30px;
-	display: inline-block;
-	padding: 0 20px 0 20px;
-	width: 90vw;
+	display: flex;
+	flex-wrap: wrap;
   }
   
-  .company-logo {
-	padding: 0 20px 50px 20px;
-  }
-  
-  .engineers h1 {
-	margin: 0 10px 0 10px;
+  .engineers {
+	padding: 20px;
   }
   
   .experience {
 	display: block;
 	justify-content: center;
 	align-items: center;
-	margin: 0 10px 0 10px;
+	padding: 0 10px 0 10px;
 	text-align: center;
+	margin: 0 0 100px 0;
   }
+  
+  .experience > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 90vw;
+  }
+  
   
   .experience img {
 	width: 90vw;
   }
   
-  .learn-section {
-	background-image: radial-gradient(circle, #fee5d2, #fff9f4);
-	padding: 50px 10px 50px 10px;
+  .wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
   }
-   .learn-grid {
+  
+  .mobile-center {
+	  display: flex;
+	  justify-content: center;
+	  background-color: yellow;
+  }
+  
+  .vid-2 video {
+	 width: 80vw;
+  }
+	
+	
+  .learn-grid {
 	display:grid;
 	grid-template-rows: 1fr;
 	grid-template-columns: repeat(2, 1fr);
 	margin: 20px 0 20px 0;
   }
   
-  .learn-section video {
-	width: 90vw;
-  }
+ 
   
   .plans {
 	display: flex;
 	justify-content: center;
-	width: 100vw;
+  }
+  
+  .plans-inner > div {
+	width: 80vw;
   }
   
   .plans-inner {
 	display: inline-block;
 	padding: 50px 0 50px 0;
-	width: 90%;
   }
   
   .plans img {
@@ -481,10 +533,10 @@ body {
 	padding: 0 5px 0 5px;
   }
   
-  .footer h2 {
-	font-size: 5rem;
+  .footer h1 {
+	font-size: 3rem;
 	text-align: center;
-	width: 7rem;
+	width: 5rem;
 	margin: 10px 0 0 0;
   }
    
@@ -492,6 +544,42 @@ body {
 
 
 
+@media (max-width: 900px){
+	.experience {
+	display: block;
+	justify-content: center;
+	align-items: center;
+	padding: 0 10px 0 10px;
+	text-align: center;
+	margin: 0 0 100px 0;
+  }
+  
+  .experience > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	width: 90vw;
+  }
+  
+  
+  .experience img {
+	width: 90vw;
+  }
+  
+   .wrapper {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+  }
+   
+  .mobile-center {
+	  display: flex;
+	  justify-content: center;
+	  background-color: yellow;
+  }
+  
+}
 
 
 
