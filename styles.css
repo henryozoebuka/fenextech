@@ -321,8 +321,9 @@ body {
 	display: flex;
 	justify-content: center;
 	margin: 0 0 50px 0;
-	width: 90vw;
+	/*width: 90vw;*/
 	flex-wrap: wrap;
+	background-color: #fff9f4;
 }
 
 
