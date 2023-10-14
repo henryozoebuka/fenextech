@@ -10,6 +10,7 @@
 		<div class="section-a">
 			<div class="nav-bar">
 				<div class="nav-logo"><a href="./index"><h1>FT</h1></a></div>
+				<button class="mobile-menu-icon">&#9776;</button>
 				<div class="nav-links">
 					<ul>
 						<li><a href="#">Home</a></li>
@@ -19,7 +20,7 @@
 					</ul>
 				</div>
 				<div id="nav-button"><p><a href="#">Register</a></p></div>
-				<div class="menu-icon"><a href="#"><img src="./images/menu.svg" alt="" /></a></div>
+				
 			</div>
 			<hr />
 			<div class="section-a-one content">
@@ -119,7 +120,7 @@
 			</div>
 			
 			<div>
-				<button>Start Here</button>
+				<a href="#">Start Here</a>
 			</div>
 			</div>
 		</div>
@@ -221,8 +222,17 @@
 		<div class="footer-bottom">
 				<p>© Copyrights <span id="year"></span> by Fenex Tech. All rights reserved.</p>
 		</div>
-			<script>
-				document.getElementById("year").innerHTML = new Date().getFullYear();
-			</script>
+		<script>
+			document.getElementById("year").innerHTML = new Date().getFullYear();
+		</script>
+		
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".mobile-menu-icon").click(function () {
+					$(".nav-links").slideToggle();
+				});
+			});
+		</script>
 	</body>
 </html>
