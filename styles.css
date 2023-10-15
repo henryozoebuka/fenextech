@@ -481,14 +481,18 @@ body {
   }
   
   .engineers {
-	margin: 20px;
+	padding: 80px 10px 80px 10px;
+  }
+  
+  .engineers h1 {
+	font-size: 2.5rem;
   }
   
   .experience {
 	display: block;
 	justify-content: center;
 	align-items: center;
-	padding: 0 10px 0 10px;
+	padding: 0 20px 0 20px;
 	text-align: center;
 	margin: 0 0 100px 0;
   }
@@ -501,9 +505,21 @@ body {
 	width: 90vw;
   }
   
+  .experience h1 {
+	font-size: 2.5rem;
+	
+  }
   
   .experience img {
 	width: 90vw;
+  }
+  
+  .experience-link {
+	margin: 50px 0 0 0;
+  }
+  
+  .experience-link a {
+	font-size: 2rem;
   }
   
   .wrapper {
@@ -519,6 +535,10 @@ body {
   
   .vid-2 video {
 	 width: 80vw;
+  }
+  
+  .learn h1 {
+	 font-size: 2.5rem;
   }
 	
 	
@@ -592,6 +612,10 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+  }
+  
+  .wrapper h1 {
+	font-size: 2.5rem;
   }
    
   .mobile-center {
